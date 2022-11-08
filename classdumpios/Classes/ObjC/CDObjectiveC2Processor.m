@@ -505,6 +505,9 @@
             ODLog(@"getting string at address for name",objc2Method.name );
             NSString *name    = [self.machOFile stringAtAddress:objc2Method.name];
             NSString *types   = [self.machOFile stringAtAddress:objc2Method.types];
+            if ((0xFFF0000000000000 & objc2Method.imp) > 0) {
+                objc2Method.imp = [self.machOFile fixupBasedAddress:objc2Method.imp];
+            }
             
             if (extendedMethodTypesCursor) {
                 uint64_t extendedMethodTypes = [extendedMethodTypesCursor readPtr];

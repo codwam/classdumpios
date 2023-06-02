@@ -116,8 +116,8 @@ int main(int argc, char *argv[])
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"verbose"]; //reset it every time
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"debug"];
 #ifdef DEBUG
-        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"debug"];
-        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"verbose"]; //make it easier to avoid hardcoded macros to enable logging
+//        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"debug"];
+//        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"verbose"]; //make it easier to avoid hardcoded macros to enable logging
 #endif
         CDClassDump *classDump = [[CDClassDump alloc] init];
 

@@ -1436,7 +1436,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		4C6161AF2885CAE0002C58C4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -1447,7 +1447,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "TARGET_BUILD_BIN=\"$TARGET_BUILD_DIR\"/\"$PRODUCT_NAME\"\nBR=$(/usr/bin/printenv BUILD_ROOT)\nif [[ $BR == *\"DerivedData\"* ]]; then\n    echo \"The substring 'DerivedData' is in the full string.\"\n    echo \"BR: $BR\"\n    echo $TARGET_BUILD_BIN\n    open \"$TARGET_BUILD_DIR\"\nfi\n\n";
 		};

@@ -296,6 +296,11 @@
     
     CDOCClass *aClass = [[CDOCClass alloc] init];
     [aClass setName:str];
+#if DEBUG
+    if ([str isEqualToString:@"MtopService"] || [str isEqualToString:@"YourClass"]) {
+        NSLog(@"");
+    }
+#endif
     InfoLog(@"\nLoading methods...\n");
     uint64_t methodAddress = objc2ClassData.baseMethods;
     uint64_t ivarsAddress = objc2ClassData.ivars;

@@ -53,10 +53,14 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-v"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/lihui02/development/training/fighting/surge-tweak-fighting/IgnoreMe/Payload/Surge-iOS"
+            argument = "/Users/lihui02/development/fighting/damai-tweak-fighting/IPA/Payload/DMPortal"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/lihui02/Library/Developer/Xcode/DerivedData/ThirdSwiftDemo-arljdniakpohjleqjgmenyqkvxaj/Build/Products/Debug-iphoneos/ThirdSwiftDemo.app/ThirdSwiftDemo"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
